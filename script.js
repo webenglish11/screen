@@ -8,7 +8,7 @@ logoButton.addEventListener('click', function() {
     // 중앙 텍스트를 기본 문구로 변경
     mainTitle.textContent = "환영합니다";
     mainTitle.style.color = "#333"; // 글자 색상 초기화
-    alert("홈으로 이동합니다!");
+
 });
 
 // 3. [로그인]과 [회원가입] 버튼을 클릭했을 때 실행할 기능
