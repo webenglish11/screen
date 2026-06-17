@@ -1,6 +1,6 @@
 
 const logoButton = document.querySelector('.classcard');
-const loginButtons = document.querySelectorAll('.login'); // 로그인, 회원가입이 같은 클래스라 모두 가져옴
+const loginButtons = document.querySelectorAll('.login'); 
 const mainTitle = document.querySelector('.main-wrapper h2');
 
 

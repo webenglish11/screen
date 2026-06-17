@@ -25,7 +25,7 @@ a{
   gap: 20px; 
 }
 
-.home {
+.set {
   color: #555;
   text-decoration: none;
   font-size: 15px;
@@ -36,17 +36,34 @@ a{
 
 .main-wrapper {
   display: flex;         
-  height: 600px;
+  height: 480px;
   justify-content: center;
   align-items: center; 
   background-color: white; 
 }
 
 
-.main-wrapper h2 {
+/* .main-wrapper h2 {
   font-size: 36px;
   color: #333;
   font-weight: bold;
+} */
+
+.realset {      
+    height: 150px;
+    justify-content: center;
+    align-items: center; 
+    background-color: white;
+
+}
+
+.use_set {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(255, 240, 103);
+
 }
 
 
