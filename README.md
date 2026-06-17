@@ -7,11 +7,37 @@
 ...
 
 ### 테이블 구성
-1. user(id, password, name) : 이러이러한 데이터가 들어감
-2. user_profile(user_id, id, nick) : 이러이러한 데이터가 들어감
-3. forder(forder_id, id, forder_name) : 이러이러한 데이터가 들어감
-4. word(word_id, forder_id, en_name, ko_name)
-...
+---
+1. user(id, password) : 회원가입시 데이터가 저장됨
+---
+| 속성명 | 설명 |
+| :--- | :--- |
+| id | 기본키 사용자를 구별하게 한다 |
+| password | 사용자가 맞는지 확인한다 |
+---
+2. user_profile(user_id, id, nick, ) : 프로필 설정
+---
+| 속성명 | 설명 |
+| :--- | :--- |
+| user_id | 기본키 |
+| id | 외래키 사용자를 구별하게 한다 |
+| nick | 사용자가 설정한 이름을 나다낸다 |
+---
+3. forder(forder_id, id, forder_name, date, owner) : 저장소 테이블
+---
+| 속성명 | 설명 |
+| :--- | :--- |
+| forder_id | 기본키 단어장을 구벌한다 |
+| id | 외래키 어떤 사용자가 만들었는지 구별하게 한다 |
+| forder_name | 폴더의 이름을 저장한다 |
+---
+4. word(word_id, forder_id, en_name, ko_name) : 저장소 안에 단어 
+---
+| 속성명 | 설명 |
+| :--- | :--- |
+| id | 기본키 사용자를 구별하게 한다 |
+| password | 사용자가 맞는지 확인한다 |
+---
 
 ### 화면 구성
 1. 로그인
