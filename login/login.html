@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
      <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -14,19 +14,23 @@
       <h4>로그인</h4>
       
       <div class="input-box">
-        <input type="text" id="email" placeholder="이메일 입력">
+        <input type="text" id="email" placeholder="아이디 입력">
       </div>
       
       <div class="input-box">
         <input type="password" id="password" placeholder="비밀번호 입력">
         <p id="pw-status">비밀번호를 입력하세요.</p>
-		<div class="pw-gauge-bg" style="width: 100%; background: #eee; height: 10px; border-radius: 5px; margin-top: 5px;">
-    <div class="pw-gauge-bar" style="width: 0%; height: 100%; background: red; transition: all 0.3s; border-radius: 5px;"></div>
-  </div>
+        <div class="pw-gauge-bg" style="width: 100%; background: #eee; height: 10px; border-radius: 5px; margin-top: 5px;">
+          <div class="pw-gauge-bar" style="width: 0%; height: 100%; background: red; transition: all 0.3s; border-radius: 5px;"></div>
+        </div>
+      </div>
 
-      <button id="send-btn">로그인</button>
-      <button id="send-btn">회원가입</button>
-      <button id="close-btn">취소</button>
+      <p id="status-msg" class="status-msg"></p>
+      <div class="logiin">
+      <a id="login-btn"class="send-btn" href="http://127.0.0.1:5500/main/main.html">로그인</a>
+      </div>
+      <button id="signup-btn" type="button" class="send-btn">회원가입</button>
+      <button id="close-btn" type="button">취소</button>
     </div>
   </div>
     <script src="login.js"></script>

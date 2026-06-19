@@ -12,6 +12,13 @@ const pwSt = document.querySelector('#pw-status')
 
 const pwBar = document.querySelector('.pw-gauge-bar')
 
+document.querySelector('#login-btn').addEventListener('click', function(){
+    document.querySelector('.black-bg').classList.remove('show')
+})
+
+document.querySelector('#signup-btn').addEventListener('click', function(){
+    alert(`회원가입에 완료되었습니다. 로그인버튼을 누르세요.`);
+})
 
 pwInput.addEventListener('input', function(){
     const len = pwInput.value.length

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+}
+
+a{
+  text-decoration-line: none;
+}
+
+.classcard {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.menu-right {
+  display: flex;
+  gap: 20px; 
+}
+
+.set {
+  color: #555;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.main-wrapper {
+  display: flex;         
+  height: 480px;
+  justify-content: center;
+  align-items: center; 
+  background-color: white; 
+}
+
+
+/* .main-wrapper h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+} */
+
+.realset {      
+    height: 150px;
+    justify-content: center;
+    align-items: center; 
+    background-color: white;
+
+}
+
+.use_set {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(255, 240, 103);
+
+}
+
+
+.footer {
+  height: 120px;
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+.header {
+  height: 120px;
+
+  margin: 0 auto;
+  display: flex;        
+  justify-content: space-between; 
+  align-items: center;  
+  padding: 0 20px;
+  background-color: lightyellow;  
+}
