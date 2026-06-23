@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+}
+
+a{
+  text-decoration-line: none;
+}
+
+.header {
+  height: 80px;
+
+  margin: 0 auto;
+  display: flex;        
+  justify-content: space-between; 
+  align-items: center;  
+  padding: 0 20px;
+  background-color: lightyellow;  
+}
+
+.classcard {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer {
+  height: 120px;
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.main{
+    height: 600px;
+}

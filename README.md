@@ -15,7 +15,7 @@
 | id | 기본키 사용자를 구별하게 한다 |
 | password | 사용자가 맞는지 확인한다 |
 ---
-2. user_profile(user_id, id, nick, ) : 프로필 설정
+2. user_profile(user_id, id, nick) : 프로필 설정
 ---
 | 속성명 | 설명 |
 | :--- | :--- |
