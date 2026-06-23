@@ -26,10 +26,9 @@ create table folder(
 
 create table card(
 	card_id int,
-	forder_id int, 
-	id varchar(15) not null,
+	forder_id int not null, 
 	en_name varchar(15),
 	ko_name varchar(15),
-    foreign key (id) references user_log(id) on delete cascade,
+    foreign key (forder_id) references forder(forder_id) on delete cascade,
     primary key (card_id)
 );

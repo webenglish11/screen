@@ -34,6 +34,7 @@ document.querySelector('#signup-btn').addEventListener('click', function(){
         return
     }
     alert(`회원가입에 완료되었습니다. 로그인버튼을 누르세요.`)
+    document.location.href = "http://127.0.0.1:5500/login/login.html";
 
 })
 
