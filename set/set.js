@@ -1,34 +1,35 @@
-
 const addBtn = document.querySelector('.add-btn')
+const inputs = document.querySelectorAll('.word')
 const list = document.querySelector('.list')
 
-function loadTodos(){
-    const save = localStorage.getItem("gkggk")
-
-    if (save)
-    {
-        list.innerHTML = save
-    }
+function loadSets() {
+    const save = localStorage.getItem('gkggk')
+    if (save) list.innerHTML = save
 }
 
-loadTodos()
-
-function saveTodos()
-{
-    localStorage.setItem("gkggk", list.innerHTML)
+function saveSets() {
+    localStorage.setItem('gkggk', list.innerHTML)
 }
 
-addBtn.addEventListener('click', function(){
-    const txt = input.value
-    if (txt.trim() === ''){
-        alert("내용 입력 바랍니다")
+loadSets()
+
+addBtn.addEventListener('click', function () {
+    const en = inputs[0].value.trim()
+    const ko = inputs[1].value.trim()
+
+    if (en === '' || ko === '') {
+        alert('영단어와 한국어를 모두 입력해주세요')
         return
     }
-    const html = `<li class='todo-item'>
-        <p> ${txt} </p>
-        </li>
-    `
-    list.innerHTML +=  html
-    saveTodos()
-    input.value = ' '
+
+    const li = document.createElement('li')
+    li.className = 'todo-item'
+    li.innerHTML = `<p>${en} - ${ko}</p>`
+
+    list.appendChild(li)
+    saveSets()
+
+    inputs[0].value = ''
+    inputs[1].value = ''
+    inputs[0].focus()
 })
