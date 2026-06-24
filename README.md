@@ -22,7 +22,7 @@
 | id | 외래키 사용자를 구별하게 한다 |
 | nick | 사용자가 설정한 이름을 나다낸다 |
 ---
-3. forder(forder_id, id, forder_name, date, owner) : 저장소 테이블
+3. forder(forder_id, id, forder_name, date) : 저장소 테이블
 ---
 | 속성명 | 설명 |
 | :--- | :--- |
@@ -30,7 +30,6 @@
 | id | 외래키 어떤 사용자가 만들었는지 구별하게 한다 |
 | forder_name | 폴더의 이름을 저장한다 |
 | date | 폴더가 언제 만들어 졌는지 알려준다 |
-| owner | 폴더를 누가 만들었는지 알려준다 |
 ---
 4. word(word_id, forder_id, en_name, ko_name) : 저장소 안에 단어 
 ---
@@ -47,4 +46,4 @@
 2. 단어공부
 3. 단어입력
 4. 프로필
-5. 단어장 
+5. 메인화면
