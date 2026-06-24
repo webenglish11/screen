@@ -1,10 +1,14 @@
 const addBtn = document.querySelector('.add-btn')
+const clearBtn = document.querySelector('.clear-btn')
 const inputs = document.querySelectorAll('.word')
 const list = document.querySelector('.list')
 
 function loadSets() {
     const save = localStorage.getItem('gkggk')
-    if (save) list.innerHTML = save
+    if (save) 
+    {
+        list.innerHTML = save
+    }
 }
 
 function saveSets() {
@@ -32,4 +36,10 @@ addBtn.addEventListener('click', function () {
     inputs[0].value = ''
     inputs[1].value = ''
     inputs[0].focus()
+})
+
+clearBtn.addEventListener('click', function () {
+    list.innerHTML = ''
+    localStorage.removeItem('gkggk')
+    document.location.href = "http://127.0.0.1:5500/main/main.html";
 })
