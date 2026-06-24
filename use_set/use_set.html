@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,40 @@
 <body>
     <div class="container">
         <div class="header">
-            <a href="http://127.0.0.1:5500/main/main.html"> < </a>
+            <a class="classcard" href="http://127.0.0.1:5500/index.html">Classcard</a>
         </div>
-        <div class="forder">
-            <h1> 폴더이름 </h1>
-            <p> 기능들 </p>
+        
+        <div class="main-wrapper">
+            <div class="amgi-container">
+                
+                <div class="top-banner">
+                    <span class="badge">단어</span>
+                    <div class="title-section">
+                        <h2>13,14,15차시</h2>
+                        <p class="card-count">4 카드 | jtmakim9918</p>
+                    </div>
+                </div>
+
+                <div class="menu-bar">
+                    <div class="info-text">⭐ 표시한 카드만 모아 학습해보세요</div>
+                    <div class="study-modes">
+                        <button class="mode-btn">암기학습</button>
+                        <button class="mode-btn">리콜학습</button>
+                        <button class="mode-btn">스펠학습</button>
+                    </div>
+                </div>
+
+                <div class="card-grid" id="cardGrid"></div>
+
+            </div>
         </div>
-        <div class="main">
-            <p> 단어들 </p>
+        
+        <div class="footer">
+            <p>CEO Inhyeok Ju</p>
+            <p>CTO Ahyun Ryu</p>
         </div>
     </div>
+
     <script src="use_set.js"></script>
 </body>
 </html>
